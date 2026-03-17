@@ -59,6 +59,7 @@ function [apriori2,apriorierror2] = apriorimodel_plasmaline(apriori,apriorierror
     % Tromso UHF radar
     % beata 1.0  -5.0 MHz
     % beata 2.0  -3.6 MHz, -6.0 MHz, -8.4 MHz,
+    % beata 2.1   3.6 MHz, -3.6 MHz, -6.0 MHz
     % beata 2.2  -2.5 MHz, -4.9 MHz
     % beata 2.3  -3.85 MHz
     %
