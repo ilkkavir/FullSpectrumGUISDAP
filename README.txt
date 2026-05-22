@@ -11,6 +11,19 @@ global bafim_flipchem_model_error
 bafim_flipchem_model_error=-1
 (for example in the "special" box) will disable the Flipchem part.
 
+
+The best combination of settings for full spectrum analysis without the chemistry modeling I have found until now is
+
+a_satch.cut=0
+a_phasepush=0
+fit_altitude(1:6,1:4)=[0 Inf .01 1e12;80 Inf .10 50;97 Inf .20 .03;0 0 0 0;80 Inf .05    5;129 270 .1  .01];
+Magic_const =  1.59
+iono_model='bafim_flipchem_plasmaline'
+%path_exps='/usr/local/GUISDAP/guisdapGithub/guisdap/exps'
+global bafim_flipchem_model_error
+bafim_flipchem_model_error=-1
+% addpath <path-to-the-modified-mrqmn-and-dirthe>
+
 Also some experimental routines for plasma line detection and Gaussian spectrum fits are included. See comments in the files...
 
 
